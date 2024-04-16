@@ -1,0 +1,49 @@
+Um url tem domínio/recurso?parametros. 
+exemplo:
+https://meusite.com.br/produtos?marca=nike&tamanho=39
+
+meusite.com.br é o domínio,
+produtos é o recurso,
+marca são os parametros.
+& significa que está colocando mais um parametro, no caso o tamanho. 
+
+Pode existir tbm subdomínios... exemplo: https://admin.meusite.com.br
+
+Uma chamada http é composta por:
+metodo/verbo -GET, POST, PUT, DELETE
+GET - BAIXAR, POST - ENVIAR, PUT - EDITAR DADOS, DELETE - EXCLUIR DADOS. 
+
+-headers/cabeçalhos
+
+-body (opcional)
+
+
+Resposta http:
+-status code
+- headers/cabecalho
+-body (opcional)
+
+JSON - JavaScript Object Notation
+
+conjunto chave-valor
+
+{
+    "nome":"Atila Fonseca"
+}
+
+API REST  
+
+API - APPLICATION PROGRAMMING INTERFACE
+REST - REPRESENTATIONAL STATE TRANSFER
+
+má prática:
+https://meusite.com/produtos
+https://meusite.com/produtos/novo
+https://meusite.com/produtos/editar
+https://meusite.com/produtos/deletar
+
+boa prática:
+GET - https://meusite.com/produtos
+POST - https://meusite.com/produtos
+PUT - https://meusite.com/produtos
+DELETE - https://meusite.com/produtos
